@@ -43,11 +43,16 @@ DATAROOT
 
 Then generate the input fragments and the ground truth TSDFs for the training/val data split by
 ```bash
-python tools/tsdf_fusion/generate_gt.py --data_path PATH_TO_SCANNET --save_name all_tsdf_9 --window_size 9
+python tools/tsdf_fusion/generate_gt.py --data_path PATH_TO_SCANNET \ 
+                                        --save_name all_tsdf_9 \ 
+                                        --window_size 9
 ```
 and for the test split by
 ```bash
-python tools/tsdf_fusion/generate_gt.py --test --data_path PATH_TO_SCANNET --save_name all_tsdf_9 --window_size 9
+python tools/tsdf_fusion/generate_gt.py --test \ 
+                                        --data_path PATH_TO_SCANNET \ 
+                                        --save_name all_tsdf_9 \ 
+                                        --window_size 9
 ```
 
 ## Example data
