@@ -4,7 +4,7 @@
 
 <br/>
 
-<center><img src="media/scene0785_00.mp4" alt=""></center>
+<center><img src="media/scene0785_00.gif" alt=""></center>
 
 <br/>
 
