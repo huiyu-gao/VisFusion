@@ -95,10 +95,10 @@ python main.py --cfg ./config/train.yaml TRAIN.EPOCHS 50 TRAIN.FINETUNE_LAYER 2 
 
 The training is seperated to five phases:
 
--  Phase 1 (epoch 1 - 20), training single fragments.
+-  Phase 1 (epoch 1 - 20), train single fragments.
 `MODEL.FUSION.FUSION_ON=False`
 
-- Phase 2 (epoch 21 - 41), training the whole model with GRUFusion.
+- Phase 2 (epoch 21 - 41), train the whole model with GRUFusion.
 
 - Phase 3 (epoch 42 - 44), finetune the first layer with GRUFusion.
 `TRAIN.FINETUNE_LAYER=0`, `MODEL.PASS_LAYERS=0`
