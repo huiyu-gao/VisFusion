@@ -12,7 +12,7 @@
 ```shell
 sudo apt install libsparsehash-dev
 conda env create -f environment.yaml
-conda activate neucon
+conda activate visfusion
 ```
 
 ## ScanNet Dataset
