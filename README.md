@@ -58,7 +58,7 @@ The reconstructed meshes will be saved to `PROJECT_PATH/results`.
 python main.py --cfg ./config/test.yaml \
                 SCENE scene0785_00 \ 
                 TEST.PATH ./example_data/ScanNet \ 
-                LOGDIR: './checkpoints' \ 
+                LOGDIR: ./checkpoints \ 
                 LOADCKPT pretrained/model_000049.ckpt
 ```
 
@@ -67,7 +67,7 @@ By default, it will output double layer meshes (for NeuralRecon's evaluation). S
 python main.py --cfg ./config/test.yaml \
                 SCENE scene0785_00 \ 
                 TEST.PATH ./example_data/ScanNet \ 
-                LOGDIR: './checkpoints' \ 
+                LOGDIR: ./checkpoints \ 
                 LOADCKPT pretrained/model_000049.ckpt \ 
                 MODEL.SINGLE_LAYER_MESH True
 ```
