@@ -93,17 +93,16 @@ The training is seperated to five phases:
 -  Phase 1 (epoch 1 - 20), training single fragments.
 `MODEL.FUSION.FUSION_ON=False`
 
-- Phase 2 (epoch 21 - 41), training the whole model with `GRUFusion`.
-`MODEL.FUSION.FUSION_ON=True`
+- Phase 2 (epoch 21 - 41), training the whole model with GRUFusion.
 
-- Phase 3 (epoch 42 - 44), finetune the first layer with `GRUFusion`.
-`MODEL.FUSION.FUSION_ON=True`, `TRAIN.FINETUNE_LAYER=0`, `MODEL.PASS_LAYERS=0`
+- Phase 3 (epoch 42 - 44), finetune the first layer with GRUFusion.
+`TRAIN.FINETUNE_LAYER=0`, `MODEL.PASS_LAYERS=0`
 
-- Phase 4 (epoch 45 - 47), finetune the second layer with `GRUFusion`.
-`MODEL.FUSION.FUSION_ON=True`, `TRAIN.FINETUNE_LAYER=1`, `MODEL.PASS_LAYERS=1`
+- Phase 4 (epoch 45 - 47), finetune the second layer with GRUFusion.
+`TRAIN.FINETUNE_LAYER=1`, `MODEL.PASS_LAYERS=1`
 
-- Phase 5 (epoch 48 - 50), finetune the third layer with `GRUFusion`.
-`MODEL.FUSION.FUSION_ON=True`, `TRAIN.FINETUNE_LAYER=2`, `MODEL.PASS_LAYERS=2`
+- Phase 5 (epoch 48 - 50), finetune the third layer with GRUFusion.
+`TRAIN.FINETUNE_LAYER=2`, `MODEL.PASS_LAYERS=2`
 
 
 ## Test
