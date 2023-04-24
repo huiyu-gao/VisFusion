@@ -1,0 +1,40 @@
+DATASET: 'scannet' # or 'ARKit'
+BATCH_SIZE: 1
+SAVE_SCENE_MESH: True
+SAVE_INCREMENTAL: False
+VIS_INCREMENTAL: False
+REDUCE_GPU_MEM: True  # Drastically reduces GPU memory and will slow down inference a bit.
+LOGDIR: './checkpoints'
+SAVE_FREQ: 1
+MODE: 'test'
+LOADCKPT: 'pretrained/model_000049.ckpt'
+SCENE: None # or test a specific scene e.g. 'scene0785_00'
+
+TEST:
+  # Change your own data path here
+  PATH: './example_data'
+  N_VIEWS: 9
+  N_WORKERS: 4
+
+MODEL:
+  SINGLE_LAYER_MESH: False
+  PASS_LAYERS: 2 # choose 0, 1 or 2 to output results at different layers (resolutions)
+  N_LAYER: 3
+  N_VOX: [96, 96, 96]
+  VOXEL_SIZE: 0.04
+  TRAIN_NUM_SAMPLE: [4096, 16384, 65536]
+  TEST_NUM_SAMPLE: [4096, 16384, 65536]
+
+  BACKBONE2D:
+    ARC: 'fpn-mnas-1'
+
+  FUSION:
+    FUSION_ON: True
+    HIDDEN_DIM: 64
+    SPARSIFY: "continuous_k"
+
+  LW: [1.0, 0.8, 0.64]
+  TOP_K_OCC: [9, 9, 9]
+  THRESHOLDS: [0, 0, 0]
+  POS_WEIGHT: 1.5
+  

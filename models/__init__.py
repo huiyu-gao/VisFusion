@@ -1,0 +1,1 @@
+from models.visfusion_net import VisFusion
