@@ -1,6 +1,6 @@
 # VisFusion: Visibility-aware Online 3D Scene Reconstruction from Videos (CVPR 2023)
 
-### [Project Page](https://huiyu-gao.github.io/visfusion) | [Paper](https://arxiv.org/abs/2304.10687) | [Supplementary](https://huiyu-gao.github.io/visfusion/resources/VisFusion_Supp.pdf)
+### [Project Page](https://huiyu-gao.github.io/visfusion) | [Paper](https://arxiv.org/abs/2304.10687) | [Supplementary](https://huiyu-gao.github.io/visfusion/resources/VisFusion_Supp.pdf) | [ScanNet test results](https://drive.google.com/drive/folders/1eRbvajEugpQH1_Bq_M5sLROoXtuFxW34?usp=sharing)
 
 <br/>
 
