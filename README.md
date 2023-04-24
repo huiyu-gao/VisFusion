@@ -4,7 +4,7 @@
 
 <br/>
 
-https://github.com/huiyu-gao/huiyu-gao.github.io/blob/main/visfusion/resources/scene0785_00.mp4
+<center><img src="media/scene0785_00.gif" alt=""></center>
 
 <br/>
 
