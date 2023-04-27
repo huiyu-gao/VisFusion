@@ -67,7 +67,7 @@ python main.py --cfg ./config/test.yaml \
                 LOADCKPT pretrained/model_000049.ckpt
 ```
 
-By default, it will output double layer meshes (for NeuralRecon's evaluation). Set `MODEL.SINGLE_LAYER_MESH=True` to directly output single layer meshes for TransformerFusion's evaluation.
+By default, it will output double layer meshes (for NeuralRecon's evaluation). Set `MODEL.SINGLE_LAYER_MESH=True` to directly output single layer meshes for [TransformerFusion](https://github.com/AljazBozic/TransformerFusion)'s evaluation.
 ```bash
 python main.py --cfg ./config/test.yaml \
                 SCENE scene0785_00 \ 
