@@ -56,9 +56,13 @@ logger.info("Initializing the model on GPU...")
 model = VisFusion(cfg).cuda().eval()
 model = torch.nn.DataParallel(model, device_ids=[0])
 
-# use the latest checkpoint file
-saved_models = [fn for fn in os.listdir(cfg.LOGDIR) if fn.endswith(".ckpt")]
-saved_models = sorted(saved_models, key=lambda x: int(x.split('_')[-1].split('.')[0]))
+if cfg.LOADCKPT != '':
+    saved_models = [cfg.LOADCKPT]
+else:
+    # use the latest checkpoint file
+    saved_models = [fn for fn in os.listdir(cfg.LOGDIR) if fn.endswith(".ckpt")]
+    saved_models = sorted(saved_models, key=lambda x: int(x.split('_')[-1].split('.')[0]))
+ 
 loadckpt = os.path.join(cfg.LOGDIR, saved_models[-1])
 logger.info("Resuming from " + str(loadckpt))
 state_dict = torch.load(loadckpt)
