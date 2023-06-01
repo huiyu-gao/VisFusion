@@ -152,10 +152,11 @@ If you find our work useful in your research please consider citing our paper:
 
 
 ```bibtex
-@article{gao2023visfusion,
-  title={{VisFusion: Visibility-aware Online 3D Scene Reconstruction from Videos},
+@inproceedings{gao2023visfusion,
+  title={VisFusion: Visibility-aware Online 3D Scene Reconstruction from Videos},
   author={Gao, Huiyu and Mao, Wei and Liu, Miaomiao},
-  booktitle={CVPR},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={17317--17326},
   year={2023}
 }
 ```
