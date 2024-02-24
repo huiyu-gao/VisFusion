@@ -93,7 +93,7 @@ python main.py --cfg ./config/train.yaml TRAIN.EPOCHS 47 TRAIN.FINETUNE_LAYER 1 
 python main.py --cfg ./config/train.yaml TRAIN.EPOCHS 50 TRAIN.FINETUNE_LAYER 2 MODEL.PASS_LAYERS 2
 ```
 
-The training is seperated to five phases:
+The training is separated to five phases:
 
 -  Phase 1 (epoch 1 - 20), train single fragments.
 `MODEL.FUSION.FUSION_ON=False`
